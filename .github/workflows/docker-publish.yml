@@ -30,7 +30,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Prereq
-        run: apt get -y bash curl build-base protoc protobuf-dev
+        run: apt install -y bash curl build-base protoc protobuf-dev
 
       # Install the cosign tool except on PR
       # https://github.com/sigstore/cosign-installer
